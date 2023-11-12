@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is web page of city Karlovac">
+    <meta name="author" content="Sanja">
+    <title>Home-page-Karlovac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <ul class="elements">
+                <li><img class="logo-image" src="../images/Logo_grada_Karlovca.png" alt="logo Karlovac"></li>
+                <li class="nav-list"><a href="../index.html">Naslovnica</a></li>
+                <li class="nav-list"><a href="./rivers.html">Karlovačke rijeke</a></li>
+                <li class="nav-list"><a href="./nature.html">Grad parkova</a></li>
+                <li class="nav-list"><a href="./culture.html">Kulturne ustanove</a></li>
+                <li class="nav-list"><a href="./history.html">Povijest grada</a></li>
+                <li class="nav-list"><a href="./events.html">Manifestacije</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main class="main-part">
+        <h1>Kako je sve počelo...</h1>
+        <article class="article">
+            <section class="section">
+                <h4>Stari grad Dubovac</h4>
+                <p>Najstariji trag ljudskog prisustva na području današnjeg Karlovca pronađen je na mjestu današnjeg
+                    starog grada Dubovca i datira od 3500. godine prije Krista. Početkom prošlog tisućljeća područje oko
+                    Karlovca postaje zanimljivo Rimljanima zbog kvalitete kamena za cestogradnju i izradu sarkofaga. U
+                    okolnim šumama još uvijek leže zaboravljeni sarkofazi.</p>
+                <p> Stari grad Dubovac sagrađen u 13. stoljeću dobio je naziv po dubu (hrastu) koji raste na padinama
+                    brijega i služio je za obranu od tatarske vojske. Mijenjao je vlasnike tijekom povijesti, mijenjao
+                    svoj izgled ovisno o trenutnim potrebama i modi, a današnji izgled je dobio nakon cjelovite
+                    rekonstrukcije sredinom 20. stoljeća.</p>
+                <p>Kolektivno sjećanje Karlovčana kaže da u bunaru Starog grada Dubovca postoji tunel koji vodi do obale
+                    Kupe i do Zvijezde. Voljeli bismo utvrditi tu činjenicu, ali se bojimo da je možda samo legenda, pa
+                    bi nam to teško palo. Neka ostane tako. Svi volimo legende i bajke.</p>
+                <p>Bajkovito dvorište starog grada ostat će bajkovito bez obzira na povijesne dokaze. Uživajte u
+                    srednjovjekovnoj atmosferi restorana unutar zidina. Pogledajte muzejski postav u Branič kuli i dok
+                    se penjete drvenim škripavim stepenicama na vrh kule, osjećajte se karlovački, dubovački!</p>
+                <figure>
+                    <img class="image" src="../images/stari-grad-dubovac.jpg" alt="Dubovac">
+                    <figcaption class="image-text">Stari grad Dubovac</figcaption>
+                </figure>
+            </section>
+            <section class="section">
+                <h4>Karlovačka zvijezda</h4>
+                <p>Tu je rođen Karlovac, jednog davnog petka 13. srpnja 1579. godine.</p>
+                <p>Zvijezda je najstariji dio Karlovca, okružena obrambenim šančevima koji su današnjim parkovima
+                    dodali još jednu dimenziju i jasno tvore granicu područja Zvijezde. Šetnica oko Zvijezde uz rubove
+                    šanaca vodi vas kroz drvorede divljeg kestena i lipe gdje ćete vidjeti i sačuvane ostatke kamenog
+                    bedema.</p>
+                <p>Unutrašnje ulice Zvijezde zavrtjet će vas oko središnjeg Trga Josipa bana Jelačića. Na trgu je
+                    zdenac. U zdencu je voda, naravno. Danas prilagođen i moderniziran sustavom vodoopskrbe, ali u
+                    prošlosti itekako bitan sa zalihom pitke vode. Katolička crkva Presvetog Trojstva i pravoslavna
+                    crkva svetog Nikole, svaka s jedne strane trga, kriju povijesne i duhovne vrijednosti grada kao i
+                    franjevački samostan u svojoj muzejskoj zbirci.</p>
+                <p>Ne možete se izgubiti u Zvijezdi. Visoki toranj crkve odličan je orijentir, a u slučaju da ga ne
+                    vidite, vjerojatno se i on izgubio – u magli. Put će vam pokazati prvi Karlovčanin na kojeg naiđete.
+                    I odvesti vas na pravi put.</p>
+                <figure>
+                    <img class="image" src="../images/zvijezda-karlovac.jpg" alt="Karlovačka zvijezda">
+                    <figcaption class="image-text">Karlovačka zvijezda</figcaption>
+                </figure>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul class="contact">
+            <li class="ask">
+                <h2 class="question">Pitajte nas</h2>
+                <p class="text-question">Poštovani, ako imate pitanje, molimo Vas da nam se javite, odgovorit ćemo Vam
+                    što prije.</p>
+            </li>
+            <form>
+                <li class="ask"><input class="input" type="text" name="q" placeholder="Što vas zanima?"></li>
+                <li class="ask"><label><input class="email" type="email"
+                            placeholder="Upišite vašu e-mail adresu"></label></li>
+                <li class="ask"><button class="button" onclick="clickButton(e)" type="submit">Pošalji pitanje</button>
+                </li>
+            </form>
+        </ul>
+        <h3 class="copyright">&copy;<span data-year></span>
+            <span>/ Designed by sanjasanjuska</span>
+            <span current-date></span>
+            <span current-time></span>
+        </h3>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

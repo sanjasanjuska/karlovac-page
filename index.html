@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is web page of city Karlovac">
+    <meta name="author" content="Sanja">
+    <title>Home-page-Karlovac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <ul class="elements">
+                <li><img class="logo-image" src="./images/Logo_grada_Karlovca.png" alt="logo Karlovac"></li>
+                <li class="nav-list"><a href="./index.html">Naslovnica</a></li>
+                <li class="nav-list"><a href="./pages/rivers.html">Karlovačke rijeke</a></li>
+                <li class="nav-list"><a href="./pages/nature.html">Grad parkova</a></li>
+                <li class="nav-list"><a href="./pages/culture.html">Kulturne ustanove</a></li>
+                <li class="nav-list"><a href="./pages/history.html">Povijest grada</a></li>
+                <li class="nav-list"><a href="./pages/events.html">Manifestacije</a></li>
+            </ul>
+        </nav>
+    </section>
+    <main class="main-part">
+        <article>
+            <h1>Karlovac - Karlstadt</h1>
+
+            <p>Karlovac, grad u Pokuplju, 56 km jugozapadno od Zagreba, sjedište Karlovačke županije.</p>
+            <p> Leži u području sutoka rijekâ Kupe, Mrežnice, Korane i Dobre, na 112 m apsolutne visine. Nalazi se na
+                raskrižju važnih puteva iz Zagreba prema Rijeci i Splitu.</p>
+            <p>Tvrđava – jezgra grada – primjer je talijanskoga renesansnoga urbanizma, tzv. idealni grad (graditelj
+                Matija Gambon). Građena je u obliku šestokrake zvijezde, podijeljene na 24 gotovo pravilna bloka s
+                pravokutnim rasterom ulica. Na glavnom trgu, tzv. Zvijezdi, nalazi se ranobarokna franjevačka crkva
+                Presvetoga Trojstva sa samostanom (XVII–XVIII. st.), Vojarna (1783), palača oružarne, pravoslavna crkva
+                sv. Nikole (1784–86) i pil s kasnobaroknim kipom Bl. Djevice Marije. Na području grada sačuvan je veći
+                broj baroknih palača (Frankopana, XVIII. st., danas Gradski muzej) i klasicističkih kuća (grofa Janka
+                Draškovića, 1828) te mnogobrojne bidermajerske građanske kuće.</p>
+
+            <figure>
+                <img class="star" src="./images/karlovac-star.jpg" alt="Karlovačka zvijezda">
+                <figcaption class="star-text">Karlovačka zvijezda</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer class="footer">
+        <ul class="contact">
+            <li class="ask">
+                <h2 class="question">Pitajte nas</h2>
+                <p class="text-question">Poštovani, ako imate pitanje, molimo Vas da nam se javite, odgovorit ćemo Vam
+                    što prije.</p>
+            </li>
+            <form>
+                <li class="ask"><input class="input" type="text" name="q" placeholder="Što vas zanima?"></li>
+                <li class="ask"><label><input class="email" type="email"
+                            placeholder="Upišite vašu e-mail adresu"></label></li>
+                <li class="ask"><button class="button" onclick="clickButton(e)" type="submit">Pošalji pitanje</button>
+                </li>
+            </form>
+        </ul>
+        <h3 class="copyright">&copy;<span data-year></span>
+            <span>/ Designed by sanjasanjuska</span>
+            <span current-date></span>
+            <span current-time></span>
+        </h3>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
