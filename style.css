@@ -14,7 +14,6 @@
         transform: translateX(0px);
         opacity: 1;
     }
-
 }
 
 html {
@@ -24,7 +23,7 @@ html {
 
 h1 {
     animation: headermove 2s ease-in-out 1.5s normal forwards;
-    font-size: 2rem;
+    font-size: 2 27px;
     font-weight: 700;
     text-align: center;
     color: rgb(106, 5, 5);
@@ -60,7 +59,6 @@ h1 {
 
 a {
     color: rgb(106, 5, 5);
-
 }
 
 a:link {
@@ -120,7 +118,7 @@ p {
 }
 
 .question {
-    font-size: 1.5rem;
+    font-size: 1.5 27px;
     font-weight: 400;
 }
 
@@ -167,7 +165,7 @@ p {
 
 .copyright {
     padding-left: 30px;
-    font-size: 1.25rem;
+    font-size: 1.25 27px;
 }
 
 [current-date] {
@@ -177,4 +175,171 @@ p {
 
 [current-time] {
     margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+    @keyframes headermove {
+        from {
+            transform: translateX(-400px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    html {
+        font-size: 23px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-shadow: 5px 5px 10px rgb(180, 106, 22);
+    }
+
+    .elements {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .logo-image {
+        width: 250px;
+        height: 70px;
+    }
+
+    .nav-list {
+        display: inline;
+        margin: 3px;
+        padding: 5px;
+    }
+
+    .star {
+        width: 320px;
+        height: 280px;
+        box-shadow: 5px 5px 10px rgb(180, 106, 22);
+    }
+
+    .question {
+        font-size: 1.5rem;
+    }
+
+    .copyright {
+        padding-left: 10px;
+        font-size: 27px;
+    }
+
+    [current-date] {
+        margin-left: 30%;
+        margin-right: 25px;
+    }
+
+    [current-time] {
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    @keyframes headermove {
+        from {
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+
+    html {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-shadow: 4px 4px 8px rgb(180, 106, 22);
+    }
+
+    .logo-image {
+        width: 90px;
+        height: 25px;
+    }
+
+    .nav-list {
+        display: inline;
+        margin: 2px;
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .star {
+        width: 220px;
+        height: 200px;
+        box-shadow: 5px 5px 10px rgb(180, 106, 22);
+    }
+
+    .contact {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .question {
+        font-size: 22px;
+    }
+
+    .text-question {
+        width: 300px;
+    }
+
+    .input {
+        width: 280px;
+        height: 40px;
+        font-size: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .email {
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+
+    .button {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        padding-left: 5px;
+        font-size: 14px;
+    }
+
+    [current-date] {
+        margin-left: 10%;
+        margin-right: 10px;
+    }
+
+    [current-time] {
+        margin-right: 3px;
+    }
 }

@@ -1,0 +1,212 @@
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@keyframes headermove {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+}
+
+html {
+    font-family: $font-family;
+    font-size: $size-unit;
+}
+
+h1 {
+    animation: headermove 2s ease-in-out 1.5s normal forwards;
+    font-size: 2 $size-unit;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(106, 5, 5);
+    text-shadow: 7px 7px 15px rgb(180, 106, 22);
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.header {
+    background-color: $background-color;
+}
+
+.elements {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logo-image {
+    width: 350px;
+    height: 100px;
+    margin: 0;
+}
+
+.nav-list {
+    display: inline-block;
+    margin: 5px;
+    padding: 15px;
+}
+
+a {
+    color: $text-color;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.main-part {
+    background-color: rgb(214, 206, 195);
+}
+
+.article {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.section {
+    display: inline;
+    margin: 20px;
+    padding: 15px;
+    width: 45%;
+    background-color: $background-color;
+    @include footer-border();
+    border-radius: 15px;
+}
+
+h4 {
+    font-size: xx-large;
+    color: brown;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: $text-color;
+    font-size: $size-unit;
+}
+
+.image {
+    width: 440px;
+    height: 350px;
+    @include border();
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    box-shadow: 7px 7px 15px rgb(180, 106, 22);
+}
+
+.image-text {
+    text-align: center;
+    padding-top: 15px;
+    color: $text-color;
+}
+
+.footer {
+    background-color: saddlebrown;
+    color: $background-color;
+}
+
+.contact {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.ask {
+    display: inline;
+    margin: 0px;
+    padding: 20px;
+}
+
+.question {
+    font-size: 1.5 $size-unit;
+    font-weight: 400;
+}
+
+.text-question {
+    width: 500px;
+    font-size: medium;
+    color: $background-color;
+    text-align: justify;
+}
+
+.input {
+    width: 350px;
+    height: 50px;
+    @include footer-border();
+    border-radius: 10px;
+    font-family: $font-family;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.email {
+    width: 250px;
+    height: 50px;
+    @include footer-border();
+    border-radius: 10px;
+    color: brown;
+    font-family: $font-family;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.button {
+    width: 150px;
+    height: 50px;
+    @include footer-border();
+    border-radius: 10px;
+    color: brown;
+    font-family: $font-family;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: $background-color;
+}
+
+.copyright {
+    padding-left: 30px;
+    font-size: 1.25 $size-unit;
+}
+
+[current-date] {
+    margin-left: 45%;
+    margin-right: 30px;
+}
+
+[current-time] {
+    margin-right: 10px;
+}
