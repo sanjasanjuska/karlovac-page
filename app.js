@@ -22,11 +22,10 @@ dateMonthYear();
 function hoursMinutesSeconds() {
     const time = new Date();
     vrijeme.innerText = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+
+    hoursMinutesSeconds();
+
 }
-
-hoursMinutesSeconds();
-
-
 function clickButton(e) {
     // code for sending message on target e-mail
 }

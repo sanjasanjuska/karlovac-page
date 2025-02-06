@@ -6,12 +6,17 @@
 
 @keyframes headermove {
   from {
-    transform: translateX(-500px);
+    transform: scale(1);
     opacity: 0;
   }
 
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
   to {
-    transform: translateX(0px);
+    transform: scale(1);
     opacity: 1;
   }
 }
@@ -22,7 +27,7 @@ html {
 }
 
 h1 {
-  animation: headermove 2s ease-in-out 1.5s normal forwards;
+  animation: headermove 2s ease-in-out normal forwards;
   font-size: 2 27px;
   font-weight: 700;
   text-align: center;
@@ -211,12 +216,17 @@ p {
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   @keyframes headermove {
     from {
-      transform: translateX(-400px);
+      transform: scale(1);
       opacity: 0;
     }
 
+    50% {
+      transform: scale(1.3);
+      opacity: 0.5;
+    }
+
     to {
-      transform: translateX(0px);
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -294,12 +304,17 @@ p {
 @media screen and (max-width: 599px) {
   @keyframes headermove {
     from {
-      transform: translateX(-300px);
+      transform: scale(1);
       opacity: 0;
     }
 
+    50% {
+      transform: scale(1.3);
+      opacity: 0.5;
+    }
+
     to {
-      transform: translateX(0px);
+      transform: scale(1);
       opacity: 1;
     }
   }

@@ -7,17 +7,16 @@
     box-sizing: border-box;
 }
 
-@keyframes headermove {
+@keyframes headmove {
     from {
-        transform: translateX(-500px);
+        transform: translateY(-500px);
         opacity: 0;
     }
 
     to {
-        transform: translateX(0px);
+        transform: translateY(0px);
         opacity: 1;
     }
-
 }
 
 html {
